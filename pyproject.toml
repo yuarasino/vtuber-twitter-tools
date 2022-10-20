@@ -9,6 +9,12 @@ packages = [{include = "vtuber_twitter_tools"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+isort = "^5.10.1"
+
+[tool.isort]
+profile = "black"
 
 [build-system]
 requires = ["poetry-core"]
